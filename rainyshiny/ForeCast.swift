@@ -51,7 +51,8 @@ class ForeCast {
                 self._lowtemp = "\(currenttemp)"
             }
             if let max = temp["max"] as? Double{
-                let currenttemp = ((max * (9/5)) - 459.67)
+                let kelvinToFarenheit = ((max * (9/5)) - 459.67)
+                let currenttemp = Double(round(10 * kelvinToFarenheit/10))
                 self._hightemp = "\(currenttemp)"
             }
         }

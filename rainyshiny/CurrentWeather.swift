@@ -62,7 +62,8 @@ class CurrentWeather {
                 }
                 if let main = dict["main"]as?Double {
                     let tempinkelvin = main
-                    let currenttemp = ((tempinkelvin * (9/5)) - 459.67)
+                    let kelvinToFarenheit = ((tempinkelvin * (9/5)) - 459.67)
+                    let currenttemp = Double(round(10 * kelvinToFarenheit/10))
                     self._currenttemp = currenttemp
                 }
                 
