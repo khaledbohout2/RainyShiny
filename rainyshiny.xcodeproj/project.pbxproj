@@ -131,17 +131,11 @@
 		7C2252B821F50413003F1893 /* rainyshiny */ = {
 			isa = PBXGroup;
 			children = (
-				7C2252B921F50413003F1893 /* AppDelegate.swift */,
-				7C2252BB21F50413003F1893 /* WeatherVC.swift */,
-				7C2252BD21F50413003F1893 /* Main.storyboard */,
+				7CE092E5226AC31F0074DF9F /* Model */,
+				7CE092E4226AC3180074DF9F /* View */,
+				7CE092E3226AC30F0074DF9F /* Controller */,
 				7C2252C021F50414003F1893 /* Assets.xcassets */,
-				7C2252C221F50414003F1893 /* LaunchScreen.storyboard */,
 				7C2252C521F50414003F1893 /* Info.plist */,
-				7CF0EDB721F7CFFB00D16A8E /* constants.swift */,
-				7C06B75C21F91DB50045C85A /* CurrentWeather.swift */,
-				7C2B183321FAA3CF00D5D5B3 /* ForeCast.swift */,
-				7C2F5FAC21FBE12000569ED7 /* WeatherCell.swift */,
-				7CF3461421FD21AC00DA6EFD /* Location.swift */,
 			);
 			path = rainyshiny;
 			sourceTree = "<group>";
@@ -162,6 +156,36 @@
 				7C2252DB21F50414003F1893 /* Info.plist */,
 			);
 			path = rainyshinyUITests;
+			sourceTree = "<group>";
+		};
+		7CE092E3226AC30F0074DF9F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C2252BB21F50413003F1893 /* WeatherVC.swift */,
+				7C2252B921F50413003F1893 /* AppDelegate.swift */,
+				7C2F5FAC21FBE12000569ED7 /* WeatherCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7CE092E4226AC3180074DF9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C2252BD21F50413003F1893 /* Main.storyboard */,
+				7C2252C221F50414003F1893 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CE092E5226AC31F0074DF9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CF0EDB721F7CFFB00D16A8E /* constants.swift */,
+				7C06B75C21F91DB50045C85A /* CurrentWeather.swift */,
+				7C2B183321FAA3CF00D5D5B3 /* ForeCast.swift */,
+				7CF3461421FD21AC00DA6EFD /* Location.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,13 +258,16 @@
 				TargetAttributes = {
 					7C2252B521F50413003F1893 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					7C2252C921F50414003F1893 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 7C2252B521F50413003F1893;
 					};
 					7C2252D421F50414003F1893 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 7C2252B521F50413003F1893;
 					};
 				};
@@ -536,7 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khaled.rainyshiny;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -556,7 +583,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khaled.rainyshiny;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -575,7 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khaled.rainyshinyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rainyshiny.app/rainyshiny";
 			};
@@ -595,7 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khaled.rainyshinyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rainyshiny.app/rainyshiny";
 			};
@@ -614,7 +641,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khaled.rainyshinyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = rainyshiny;
 			};
@@ -633,7 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khaled.rainyshinyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = rainyshiny;
 			};

@@ -47,7 +47,8 @@ class ForeCast {
      init(weatherDict: Dictionary<String, AnyObject>) {
         if let temp = weatherDict["temp"]as? Dictionary<String,AnyObject>{
             if let min = temp["min"]as? Double {
-                let currenttemp = ((min * (9/5)) - 459.67)
+              let kelvinToFarenheit = ((min * (9/5)) - 459.67)
+                let currenttemp = Double(round(10 * kelvinToFarenheit/10))
                 self._lowtemp = "\(currenttemp)"
             }
             if let max = temp["max"] as? Double{

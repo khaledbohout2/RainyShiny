@@ -34,13 +34,13 @@ class CurrentWeather {
     }
     var weathertype:String {
         if _weathertype == nil {
-            _weathertype = ""
+        _weathertype = ""
         }
         return _weathertype
     }
     var currenttemp:Double {
         if _currenttemp == nil {
-            _currenttemp = 0.0
+           _currenttemp = 0.0
         }
         return _currenttemp
     }
@@ -60,11 +60,13 @@ class CurrentWeather {
                         self._weathertype = main.capitalized
                     }
                 }
-                if let main = dict["main"]as?Double {
-                    let tempinkelvin = main
+                if let main = dict["main"]as?Dictionary<String,AnyObject>{
+        
+                    if let tempinkelvin = main["temp"]as? Double{
                     let kelvinToFarenheit = ((tempinkelvin * (9/5)) - 459.67)
                     let currenttemp = Double(round(10 * kelvinToFarenheit/10))
                     self._currenttemp = currenttemp
+                    }
                 }
                 
             }

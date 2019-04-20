@@ -9,7 +9,9 @@
 import CoreLocation
 class Location {
     static var ShredInstanc = Location()
-    private init() {}
+    private init() {
+        
+    }
     var londitude:Double!
     var latitude:Double!
     
