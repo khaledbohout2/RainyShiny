@@ -4,7 +4,7 @@
 
 weather app using open weather api
 
-
+![rainy-shiny](https://user-images.githubusercontent.com/46874509/62081673-66e7ae80-b253-11e9-932a-9a9feeaaf757.gif)
 
 
 * use CocoaPods to manage and use open source code libraries. 
